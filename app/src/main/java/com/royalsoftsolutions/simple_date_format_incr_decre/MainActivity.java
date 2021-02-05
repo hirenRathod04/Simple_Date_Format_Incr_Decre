@@ -17,12 +17,31 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     private int x = 1;
     private int no_Of_Date_Get = 10;
-    ArrayList<String> list;
+    private  ArrayList<String> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
+
+        function_For_Datelist();
+
+        System.out.println ( "###########--------------End" +
+                "------------------######################" );
+
+           /*  arr[k] = list.split(" ");
+            Toast.makeText(this,"${arr[0]} : ${arr[1]}", Toast.LENGTH_LONG).show();*//*
+
+        }
+*/
+        /*list.add("Ravi");//Adding object in arraylist
+        list.add("Vijay");
+        list.add("Ravi");
+        list.add("Ajay");*/
+    }
+
+    private void function_For_Datelist() {
+
         list=new ArrayList<String>();//Creating arraylist
         DateFormat dateFormat = new SimpleDateFormat ( "dd/MM/yyyy" );
         Date date = new Date (  );
@@ -48,15 +67,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println ( "###########------END ARRAY OUTPUT---######################" );
 
 
-           /*  arr[k] = list.split(" ");
-            Toast.makeText(this,"${arr[0]} : ${arr[1]}", Toast.LENGTH_LONG).show();*//*
 
-        }
-*/
-        /*list.add("Ravi");//Adding object in arraylist
-        list.add("Vijay");
-        list.add("Ravi");
-        list.add("Ajay");*/
     }
 
     public static String add_Date(int n) {
