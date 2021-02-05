@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
 
-        function_For_Datelist();
+        function_For_DateList();
 
         System.out.println ( "###########--------------End" +
                 "------------------######################" );
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         list.add("Ajay");*/
     }
 
-    private void function_For_Datelist() {
+    private void function_For_DateList() {
 
         list=new ArrayList<String>();//Creating arraylist
         DateFormat dateFormat = new SimpleDateFormat ( "dd/MM/yyyy" );
